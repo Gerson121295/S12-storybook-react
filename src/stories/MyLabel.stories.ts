@@ -45,3 +45,11 @@ export const CustomColor: Story = { //exporta y crea la story
         fontColor:'#5517ac',
     }
 };
+
+export const CustomBackgroundColor: Story = { //exporta y crea la story
+        args:{ //define el valor del label de MyLabel.tsx
+            label: 'CustomColor',
+            fontColor:'#eeeeee',
+            backgroundColor: '#000000#000000'
+        }
+};
