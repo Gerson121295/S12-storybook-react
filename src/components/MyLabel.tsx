@@ -1,7 +1,7 @@
 import './MyLabel.css';
 
 //interface establece los valores de estilos definidos en MyLabel.css
-interface Props {
+export interface Props {
 
     /**
      * Text to display
