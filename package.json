@@ -1,7 +1,7 @@
 {
   "name": "gep-custom-components-sb",
   "private": false,
-  "version": "0.0.1-1",
+  "version": "0.0.1-rc-4",
   "type": "module",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -14,11 +14,12 @@
   "license": "MIT",
   "homepage": "https:fernando-herrera.com",
   "repository": {
-    "url": "git+https://github.com/Gerson121295/S12-storybook-react.git",
+    "url": "https://github.com/Gerson121295/S12-storybook-react",
     "type": "git"
   },
   "files": [
-    "dist/"
+    "dist/",
+    "README.md"
   ],
   "release": {
     "branches": [
@@ -26,9 +27,11 @@
     ]
   },
   "peerDependencies": {
-    "my-storybook": "file:",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react": "^16.8.0 || ^18.3.1",
+    "react-dom": "^16.8.0 || ^18.3.1"
+  },
+  "engines": {
+    "node": ">=12.0.0"
   },
   "scripts": {
     "dev": "npm run storybook",
@@ -39,7 +42,8 @@
     "build-storybook": "storybook build",
     "chromatic": "npx chromatic --project-token=chpt_b4c794f3f764871",
     "clean": "rimraf dist/",
-    "copyfiles": "copyfiles -u 1 src/**/*.css dist/"
+    "copyfiles": "copyfiles -u 1 src/**/*.css dist/",
+    "push:npm": "np"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.3",
